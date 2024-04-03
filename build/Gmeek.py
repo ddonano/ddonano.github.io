@@ -344,7 +344,6 @@ class GMEEK():
         self.cleanFile()
 
         issues=self.repo.get_issues()
-        print("issues:"+json.dumps(issues))
         for issue in issues:
             self.addOnePostJson(issue)
 
@@ -361,7 +360,6 @@ class GMEEK():
     def runOne(self,number_str):
         print("====== start create static html ======")
         issue=self.repo.get_issue(int(number_str))
-        print("issue:"+ json.dumps(issue))
         listJsonName=self.addOnePostJson(issue)
         self.createPostHtml(self.blogBase[listJsonName]["P"+number_str])
         self.createPlistHtml()
