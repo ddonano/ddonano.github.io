@@ -1,0 +1,3 @@
+[submodule "build/Gmeek"]
+	path = build/Gmeek
+	url = https://github.com/ddonano/Gmeek.git

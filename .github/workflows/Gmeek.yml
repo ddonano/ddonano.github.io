@@ -35,7 +35,7 @@ jobs:
 
       - name: copy build code
         run: |
-          cp -a  ${{ github.workspace }}/build /opt/Gmeek;
+          cp -a  ${{ github.workspace }}/build/Gmeek /opt/Gmeek;
           cd /opt/Gmeek/
 
       - name: Install dependencies
